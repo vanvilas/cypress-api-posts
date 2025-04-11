@@ -50,7 +50,7 @@ Os testes foram escritos com **Cypress**, cobrindo os principais cenários de us
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/vanvilas/qa-portfolio.git
+git clone [https://github.com/vanvilas/cypress-api-posts.git]
 cd cypress-api-posts
 ```
 2. Instale as dependências:
