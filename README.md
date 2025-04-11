@@ -1,39 +1,38 @@
 # 📰 Paginação de Posts com Cypress + API
 
-Este projeto simula um blog com posts carregados a partir de uma API pública (`JSONPlaceholder`).
-O objetivo foi implementar **paginação real** e testar o carregamento progressivo dos dados usando **Cypress**.
+Este projeto simula um blog com posts carregados de forma paginada a partir de uma API pública (`JSONPlaceholder`).
+
+O foco foi aplicar **conceitos reais de front-end com JavaScript puro** e **automatizar testes E2E com Cypress**, simulando o comportamento de um app usado em produção.
 
 ---
 
 ## 🚀 Funcionalidades
 
 - Consumo de dados da API `https://jsonplaceholder.typicode.com/posts`
-- Paginação de 3 em 3 posts ao clicar no botão "Ver mais posts"
-- Ocultação automática do botão ao atingir o fim da lista
-- Reset da lista com botão ao atingir o fim da lista
-- Reset da lista com botão "Reiniciar Lista" 
-- Testes automatizados com Cypress cobrindo:
-    - Primeira carga de posts
-    - Carga de mais posts
-    - Ocultação do botão
-    - Reset do conteúdo
+- Paginação real: exibição de 3 posts por vez
+- Mensagem de carregamento ("Carregando...") enquanto busca os dados
+- Tratamento de erro com mensagem de falha amigável
+- Ocultação automática do botão "Ver mais" ao fim da lista
+- Botão "Reiniciar Lista" para resetar os posts e reiniciar a visualização
+- Estilização básica com HTML e CSS
 
 ---
 
-## 🧪 Testes Automatizados
+## 🧪 Testes Automatizados com Cypress
 
-Os testes foram feitos com **Cypress** e se encontram na pasta `cypress/e2e`.
+Os testes foram escritos com **Cypress**, cobrindo os principais cenários de uso da aplicação: 
 
-### Exemplo de testes cobertos:
+- ✅ Primeira carga de posts
+- ✅ Carregamento progressivo (paginação)
+- ✅ Ocultação do botão após último post
+- ✅ Reset da lista com botão
+- ✅ Simulação de erro da API (status 500)
 
-- `carrega os 3 primeiros posts da API`
-- `carrega mais 3 posts ao clicar no botão`
-- `deve esconder o botão após carregar todos os posts`
-- `reinicia a lista de posts`
+> 📍 Os testes estão na pasta `cypress/e2e`.
 
 ---
 
-## 📸 Imagem dos testes passando
+## 📸 Testes em execução
 
 > ![Testes passando no Cypress](./print.png)
 
@@ -41,13 +40,13 @@ Os testes foram feitos com **Cypress** e se encontram na pasta `cypress/e2e`.
 
 ## 🛠️ Tecnologias 
 
-- HTML, CSS e JavScript (Vanilla)
-- API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/) 
-- [Cypress](https://www.cypress.io/) para testes E2E
+- **HTML, CSS e JavScript (Vanilla JS)**
+- **Cypress** para testes E2E
+- **API JSONPlaceholder** (fake REST API gratuita)
 
 ---
 
-## 🗂️ Como rodar o projeto
+## 🗂️ Como rodar o projeto localmente
 
 1. Clone o repositório:
 ```bash
@@ -69,7 +68,9 @@ npx cypress open
 
 ---
 
-👩‍💻 Feito por
+👩‍💻 Sobre mim
 
-Vanessa — 
+Desenvolvido por Vanessa Vilas Boas — apaixonada por tecnologia e qualidade de software.
+
+📌 Em transição de carreira, com foco em QA (Testes Automatizados) e conhecimentos sólidos em desenvolvimento front-end.
 [LinkedIn](https://www.linkedin.com/in/vanessa-vilas-boas/)
