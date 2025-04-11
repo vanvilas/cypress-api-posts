@@ -73,4 +73,5 @@ npx cypress open
 Desenvolvido por Vanessa Vilas Boas — apaixonada por tecnologia e qualidade de software.
 
 📌 Em transição de carreira, com foco em QA (Testes Automatizados) e conhecimentos sólidos em desenvolvimento front-end.
+
 [LinkedIn](https://www.linkedin.com/in/vanessa-vilas-boas/)
